@@ -1,0 +1,145 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    color: #252525;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #fD8080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: fD8080;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+
+}
+nav ul li a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Cake Flavors section styling */
+#flavors ul {
+    list-style: none;
+    padding: 0;
+}
+
+#flavors ul li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.cake-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cake-images img {
+    max-width: 15%;
+    height: 10%;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+
+/* Contact section styling */
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Price Calculator section styling */
+#calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#calculator label {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+#calculator select,
+#calculator input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+#calculator button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#calculator button:hover {
+    background-color: #e09e00;
+}
+
+/* Total Price display */
+#total-price {
+    font-size: 1.5rem;
+    color: #0c0a04;
+    font-weight: bold;
+    margin-top: 20px;
+}
