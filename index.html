@@ -1,127 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Store</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to Our Sweet Delights</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#flavors">Cake Flavors</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#calculator">Price Calculator</a></li>
-            </ul>
-        </nav>
+      <h1>Welcome to Our Sweet Delights</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#flavors">Cake Flavors</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#calculator">Price Calculator</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="introduction">
-        <h2>Store Introduction</h2>
-        <p>Welcome to our delightful cake store where every slice is a piece of heaven!</p>
+      <h2>Store Introduction</h2>
+      <p>
+        Welcome to Sweet Delights, your go-to destination for delicious
+        and beautifully crafted cakes! We take pride in creating fresh,
+        high-quality cakes for every occasion, including birthdays, weddings,
+        anniversaries, and special celebrations. Our cakes are made with the
+        finest ingredients, ensuring a rich and delightful taste in every bite.
+        We offer a wide range of flavors, from classic chocolate and vanilla to
+        unique, customized creations. Whether you need a simple, elegant cake or
+        an extravagant, custom-designed masterpiece, we are here to make your
+        sweet dreams come true.
+      </p>
     </section>
 
     <section id="flavors">
-        <h2>Our Cake Flavors</h2>
-        <ul>
-            <li>Chocolate</li>
-            <li>Vanilla</li>
-            <li>Red Velvet</li>
-            <li>Carrot</li>
-            <li>Strawberry</li>
-            <li>Cheesecake</li>
-        </ul>
-        <div class="cake-images">
-            <img src="images/chocolate-cake.png" alt="Chocolate Cake">
-            <img src="images/vanilla-cake.png" alt="Vanilla Cake">
-            <img src="images/red-velvet-cake.png" alt="Red Velvet Cake">
-            <img src="images/carrot-cake.png" alt="Carrot Cake">
-            <img src="images/strawberry-cake.png" alt="Strawberry Cake">
-            <img src="images/cheese-cake.png" alt="Cheesecake">
-        </div>
+      <h2>Our Cake Flavors</h2>
+      <ul>
+        <li>Chocolate</li>
+        <li>Vanilla</li>
+        <li>Red Velvet</li>
+        <li>Carrot</li>
+        <li>Strawberry</li>
+        <li>Cheesecake</li>
+      </ul>
+      <div class="cake-images">
+        <img src="chocolate-cake.png" alt="Chocolate Cake" />
+        <li>Chocolate</li>
+        <img src="vanilla-cake.png" alt="Vanilla Cake" />
+        <li>Vanilla</li>
+        <img src="red-velvet-cake.png" alt="Red Velvet Cake" />
+        <li>Red Velvet</li>
+        <img src="carrot-cake.png" alt="Carrot Cake" />
+        <li>Carrot</li>
+        <img src="strawberry-cake.png" alt="Strawberry Cake" />
+        <li>Strawberry</li>
+        <img src="cheese-cake.png" alt="Cheesecake" />
+        <li>Cheesecake</li>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Fb: info@sweetdelights.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 Cake Lane, Sweet City, CA</p>
+      <h2>Contact Us</h2>
+      <p>Fb: info@sweetdelights.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Cake Lane, Sweet City, CA</p>
     </section>
 
     <section id="calculator">
-        <h2>Price Calculator</h2>
-        <form id="price-form">
-            <div id="order-list">
-                <div class="order-item">
-                    <label for="flavor">Select Cake Flavor:</label>
-                    <select class="flavor">
-                        <option value="chocolate">Chocolate - ₱1500</option>
-                        <option value="vanilla">Vanilla - ₱850</option>
-                        <option value="red-velvet">Red Velvet - ₱1700</option>
-                        <option value="carrot">Carrot - ₱900</option>
-                        <option value="strawberry">Strawberry - ₱1999</option>
-                        <option value="cheesecake">Cheesecake - ₱450</option>
-                    </select>
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" class="quantity" value="1" min="1">
-                    <button type="button" onclick="removeOrder(this)">Remove</button>
-                </div>
-            </div>
-            <button type="button" onclick="addOrder()">Add Another Cake</button>
-            <button type="button" onclick="calculateTotal()">Calculate Total Price</button>
-        </form>
-        <p id="total-price"></p>
+      <h2>Price Calculator</h2>
+      <form id="price-form">
+        <div id="order-list">
+          <div class="order-item">
+            <label for="flavor">Select Cake Flavor:</label>
+            <select class="flavor">
+              <option value="chocolate">Chocolate - ₱1500</option>
+              <option value="vanilla">Vanilla - ₱850</option>
+              <option value="red-velvet">Red Velvet - ₱1700</option>
+              <option value="carrot">Carrot - ₱900</option>
+              <option value="strawberry">Strawberry - ₱1999</option>
+              <option value="cheesecake">Cheesecake - ₱450</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" class="quantity" value="1" min="1" />
+            <button type="button" onclick="removeOrder(this)">Remove</button>
+          </div>
+        </div>
+        <button type="button" onclick="addOrder()">Add Another Cake</button>
+        <button type="button" onclick="calculateTotal()">
+          Calculate Total Price
+        </button>
+      </form>
+      <p id="total-price"></p>
     </section>
 
     <script>
-        const flavorPrices = {
-            chocolate: 1500,
-            vanilla: 850,
-            redVelvet: 1700,
-            carrot: 900,
-            strawberry: 1999,
-            cheesecake: 450
-        };
+      const flavorPrices = {
+          chocolate: 1500,
+          vanilla: 850,
+          redVelvet: 1700,
+          carrot: 900,
+          strawberry: 1999,
+          cheesecake: 450
+      };
 
-        function addOrder() {
-            const orderList = document.getElementById('order-list');
-            const newOrder = document.createElement('div');
-            newOrder.classList.add('order-item');
-            newOrder.innerHTML = `
-                <label for="flavor">Select Cake Flavor:</label>
-                <select class="flavor">
-                    <option value="chocolate">Chocolate - ₱1500</option>
-                    <option value="vanilla">Vanilla - ₱850</option>
-                    <option value="red-velvet">Red Velvet - ₱1700</option>
-                    <option value="carrot">Carrot - ₱900</option>
-                    <option value="strawberry">Strawberry - ₱1999</option>
-                    <option value="cheesecake">Cheesecake - ₱450</option>
-                </select>
-                <label for="quantity">Quantity:</label>
-                <input type="number" class="quantity" value="1" min="1">
-                <button type="button" onclick="removeOrder(this)">Remove</button>
-            `;
-            orderList.appendChild(newOrder);
-        }
+      function addOrder() {
+          const orderList = document.getElementById('order-list');
+          const newOrder = document.createElement('div');
+          newOrder.classList.add('order-item');
+          newOrder.innerHTML = `
+              <label for="flavor">Select Cake Flavor:</label>
+              <select class="flavor">
+                  <option value="chocolate">Chocolate - ₱1500</option>
+                  <option value="vanilla">Vanilla - ₱850</option>
+                  <option value="red-velvet">Red Velvet - ₱1700</option>
+                  <option value="carrot">Carrot - ₱900</option>
+                  <option value="strawberry">Strawberry - ₱1999</option>
+                  <option value="cheesecake">Cheesecake - ₱450</option>
+              </select>
+              <label for="quantity">Quantity:</label>
+              <input type="number" class="quantity" value="1" min="1">
+              <button type="button" onclick="removeOrder(this)">Remove</button>
+          `;
+          orderList.appendChild(newOrder);
+      }
 
-        function removeOrder(button) {
-            const orderItem = button.parentElement;
-            orderItem.remove();
-        }
+      function removeOrder(button) {
+          const orderItem = button.parentElement;
+          orderItem.remove();
+      }
 
-        function calculateTotal() {
-            const orders = document.querySelectorAll('.order-item');
-            let total = 0;
-            orders.forEach(order => {
-                const flavor = order.querySelector('.flavor').value;
-                const quantity = order.querySelector('.quantity').value;
-                total += flavorPrices[flavor] * quantity;
-            });
-            document.getElementById('total-price').innerText = `Total Price: ₱${total}`;
-        }
+      function calculateTotal() {
+          const orders = document.querySelectorAll('.order-item');
+          let total = 0;
+          orders.forEach(order => {
+              const flavor = order.querySelector('.flavor').value;
+              const quantity = order.querySelector('.quantity').value;
+              total += flavorPrices[flavor] * quantity;
+          });
+          document.getElementById('total-price').innerText = Total Price: ₱${total};
+      }
     </script>
-</body>
+  </body>
 </html>
